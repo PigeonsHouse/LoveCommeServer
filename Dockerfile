@@ -1,8 +1,8 @@
 FROM golang:1.21.1-alpine
 
-RUN mkdir -p /go/src/OnakaAPI/
-COPY . /go/src/OnakaAPI/
-WORKDIR /go/src/OnakaAPI/
+RUN mkdir -p /go/src/love-comme-server/
+COPY . /go/src/love-comme-server/
+WORKDIR /go/src/love-comme-server/
 
 RUN go install
 
