@@ -40,5 +40,8 @@ func InitRouter(api *gin.Engine) {
 	}))
 	api.GET("/", hello)
 
+	ws_router := api.Group("/ws")
+	initWsRouter(ws_router)
+
 	api.Group("/api/v1")
 }
